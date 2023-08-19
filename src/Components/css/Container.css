@@ -1,0 +1,60 @@
+.card-container {
+  width: 87%;
+  height: min-content;
+  background-color: #ffffff;
+  margin: 3px;
+  padding: 3px 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.15em;
+  border-radius: 3px;
+}
+.title-container {
+  width: 100%;
+  > h1 {
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  > h1:hover {
+    white-space: normal;
+  }
+}
+p {
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: #8d9095;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-container {
+  position: relative;
+}
+
+.profile-pic {
+  width: 19px;
+}
+
+.status {
+  position: absolute;
+  bottom: 0;
+  top: 0.8rem;
+  right: 0.05rem;
+  background-color: green;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-width: 3px;
+  border: 1px solid white;
+  border-radius: 9999px;
+}
+
+.status.notAvailable {
+  background-color: red;
+}
